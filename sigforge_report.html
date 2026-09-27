@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SigForge Analysis Report — test_qpsk.bin</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            margin: 0;
+            padding: 30px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        header {
+            border-bottom: 1px solid #30363d;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        h1 {
+            color: #58a6ff;
+            margin: 0;
+            font-size: 26px;
+        }
+        .meta-tag {
+            background: #161b22;
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 13px;
+            color: #8b949e;
+            border: 1px solid #30363d;
+        }
+        .card {
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 24px;
+        }
+        h2 {
+            color: #f0f6fc;
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 16px;
+            border-bottom: 1px solid #21262d;
+            padding-bottom: 8px;
+        }
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+            margin-bottom: 16px;
+        }
+        .stat-box {
+            background: #0d1117;
+            padding: 12px;
+            border-radius: 6px;
+            border: 1px solid #21262d;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: #8b949e;
+            text-transform: uppercase;
+        }
+        .stat-value {
+            font-size: 20px;
+            font-weight: 600;
+            color: #58a6ff;
+            margin-top: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 14px;
+        }
+        th, td {
+            text-align: left;
+            padding: 10px;
+            border-bottom: 1px solid #21262d;
+        }
+        th {
+            color: #8b949e;
+            font-weight: 600;
+        }
+        .badge {
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 600;
+            display: inline-block;
+        }
+        .progress-bar-bg {
+            background: #21262d;
+            border-radius: 4px;
+            height: 8px;
+            width: 100px;
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+        .progress-bar-fill {
+            background: #238636;
+            height: 100%;
+            border-radius: 4px;
+        }
+        pre {
+            background: #0d1117;
+            padding: 12px;
+            border-radius: 6px;
+            overflow-x: auto;
+            font-family: monospace;
+            font-size: 12px;
+            color: #79c0ff;
+            border: 1px solid #21262d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div>
+                <h1>SigForge Signal Analysis Report</h1>
+                <div style="color: #8b949e; font-size: 13px; margin-top: 4px;">
+                    Target: <strong>test_qpsk.bin</strong> &bull; Generated: 2026-09-25 17:42:00 UTC
+                </div>
+            </div>
+            <div>
+                <span class="meta-tag">Processed in 2.22s</span>
+            </div>
+        </header>
+
+        <!-- Executive Summary -->
+        <div class="card" style="border-left: 4px solid #f97316;">
+            <h2>Verdict: QPSK</h2>
+            <div class="grid-4">
+                <div class="stat-box">
+                    <div class="stat-label">Confidence</div>
+                    <div class="stat-value" style="color:#f97316;">35.6%</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Estimated Symbol Rate</div>
+                    <div class="stat-value">250.0 kHz</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Carrier Frequency Offset</div>
+                    <div class="stat-value">+198.4 Hz</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Signal-to-Noise Ratio</div>
+                    <div class="stat-value">20.9 dB</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hypothesis Ranking -->
+        <div class="card">
+            <h2>Hypothesis Ranking & Validation</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Status</th>
+                        <th>Interpretation</th>
+                        <th>Symbol Rate</th>
+                        <th>Confidence</th>
+                        <th>EVM</th>
+                        <th>Hard Validation</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+            <tr>
+                <td><strong>1</strong></td>
+                <td><span class="badge" style="background:#f9731622; color:#f97316; border: 1px solid #f9731644;">🟠 ORANGE</span></td>
+                <td><strong>QPSK</strong></td>
+                <td>250,000 Hz</td>
+                <td>35.6%</td>
+                <td>-14.9 dB</td>
+                <td>—</td>
+            </tr>
+            
+            <tr>
+                <td><strong>2</strong></td>
+                <td><span class="badge" style="background:#f9731622; color:#f97316; border: 1px solid #f9731644;">🟠 ORANGE</span></td>
+                <td><strong>MSK</strong></td>
+                <td>250,000 Hz</td>
+                <td>31.1%</td>
+                <td>-10.6 dB</td>
+                <td>—</td>
+            </tr>
+            
+            <tr>
+                <td><strong>3</strong></td>
+                <td><span class="badge" style="background:#9ca3af22; color:#9ca3af; border: 1px solid #9ca3af44;">⚪ GREY</span></td>
+                <td><strong>8-PSK</strong></td>
+                <td>250,000 Hz</td>
+                <td>28.3%</td>
+                <td>-15.4 dB</td>
+                <td>—</td>
+            </tr>
+            
+            <tr>
+                <td><strong>4</strong></td>
+                <td><span class="badge" style="background:#9ca3af22; color:#9ca3af; border: 1px solid #9ca3af44;">⚪ GREY</span></td>
+                <td><strong>16-QAM</strong></td>
+                <td>250,000 Hz</td>
+                <td>28.1%</td>
+                <td>-6.3 dB</td>
+                <td>—</td>
+            </tr>
+            
+            <tr>
+                <td><strong>5</strong></td>
+                <td><span class="badge" style="background:#9ca3af22; color:#9ca3af; border: 1px solid #9ca3af44;">⚪ GREY</span></td>
+                <td><strong>2-FSK</strong></td>
+                <td>250,000 Hz</td>
+                <td>27.2%</td>
+                <td>-10.6 dB</td>
+                <td>—</td>
+            </tr>
+            
+            <tr>
+                <td><strong>6</strong></td>
+                <td><span class="badge" style="background:#9ca3af22; color:#9ca3af; border: 1px solid #9ca3af44;">⚪ GREY</span></td>
+                <td><strong>BPSK</strong></td>
+                <td>250,000 Hz</td>
+                <td>12.0%</td>
+                <td>-1.0 dB</td>
+                <td>—</td>
+            </tr>
+            
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Evidence Breakdown -->
+        <div class="card">
+            <h2>Evidence Breakdown (Best Hypothesis)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Source</th>
+                        <th>Support Score</th>
+                        <th>Weight</th>
+                        <th>Measurement Detail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                <tr>
+                    <td><code>cumulants</code></td>
+                    <td>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 19%;"></div>
+                        </div>
+                        <span style="font-size:12px; color:#888;">0.193</span>
+                    </td>
+                    <td>0.15</td>
+                    <td>cumulant/classifier match (19.3%)</td>
+                </tr>
+                
+                <tr>
+                    <td><code>re_encoding_match</code></td>
+                    <td>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 1%;"></div>
+                        </div>
+                        <span style="font-size:12px; color:#888;">0.019</span>
+                    </td>
+                    <td>0.05</td>
+                    <td>NMSE: 1.9827</td>
+                </tr>
+                
+                <tr>
+                    <td><code>constellation_quality</code></td>
+                    <td>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 59%;"></div>
+                        </div>
+                        <span style="font-size:12px; color:#888;">0.596</span>
+                    </td>
+                    <td>0.10</td>
+                    <td>EVM: -14.9 dB</td>
+                </tr>
+                
+                <tr>
+                    <td><code>snr_consistency</code></td>
+                    <td>
+                        <div class="progress-bar-bg">
+                            <div class="progress-bar-fill" style="width: 69%;"></div>
+                        </div>
+                        <span style="font-size:12px; color:#888;">0.698</span>
+                    </td>
+                    <td>0.05</td>
+                    <td>SNR: 20.9 dB</td>
+                </tr>
+                
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Bitstream Dump -->
+        <div class="card">
+            <h2>Decoded Bitstream Preview (First 512 bits)</h2>
+            <pre>0000  75 F7 5F 7F 5D 73 3B 6E  |u._.]s;n|
+0008  6E 63 BC 13 16 9C 3E 3E  |nc....>>|
+0010  3E C1 34 14 E9 49 43 49  |>.4..ICI|
+0018  28 28 E9 EA A2 02 20 A0  |((.... .|
+0020  28 88 22 AA 20 A8 02 20  |(.". .. |
+0028  00 08 22 2A 22 20 28 A8  |.."*" (.|
+0030  0A A8 08 80 82 88 80 A2  |........|
+0038  88 02 2A 8A 00 A8 00 02  |..*.....|</pre>
+        </div>
+    </div>
+</body>
+</html>
